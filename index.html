@@ -1,121 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Death Note</title>
-    <style>
-        /* Estilos gerais */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        
-        header {
-            text-align: center;
-            background-color: #222;
-            padding: 20px 0;
-        }
-        
-        header img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        main {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        
-        h1 {
-            color: #c00;
-            text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #c00;
-            padding-bottom: 10px;
-        }
-        
-        p {
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-        
-        /* Estilo para imagens alinhadas à direita */
-        .right-img {
-            float: right;
-            margin: 0 0 20px 20px;
-            max-width: 40%;
-            border-radius: 5px;
-            border: 2px solid #c00;
-        }
-        
-        /* Limpar floats */
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        
-        /* Container para a última imagem centralizada */
-        .last-img-container {
-            text-align: center;
-            margin: 30px 0;
-        }
-        
-        .last-img-container img {
-            display: inline-block;
-            max-width: 80%;
-            border: 2px solid #c00;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Qualidade de Vida</title>
+  <style>
+    /* Estilos base (simulando o arquivo CSS usado em sala) */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    
+    /* Estilo para o bloco com imagem à esquerda */
+    .bloco-esquerda {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    
+    /* Estilo para o bloco com imagem à direita */
+    .bloco-direita {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+      flex-direction: row-reverse; /* Inverte a ordem para imagem à direita */
+    }
+    
+    .texto {
+      flex: 1;
+      text-align: justify;
+    }
+    
+    .imagem {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    
+    .versao {
+      text-align: right;
+      color: #7f8c8d;
+      font-style: italic;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="https://i.imgur.com/ZQ1oWiw.png" alt="Cabeçalho Death Note">
-    </header>
 
-    <main>
-        <h1>Death Note: O Conflito Entre Justiça e Moral</h1>
-        
-        <div class="clearfix">
-            <p>A história segue Light Yagami, um estudante brilhante que encontra um caderno sobrenatural chamado "Death Note", capaz de matar qualquer pessoa cujo nome seja escrito nele. Ao decidir usar o caderno para eliminar criminosos e criar um mundo "perfeito", Light entra em um jogo de gato e rato com o detetive L, um gênio enigmático determinado a capturá-lo.</p>
-            
-            <img src="https://i.imgur.com/mKCWGFd.png" alt="Light vs L" class="right-img">
-        </div>
-        
-        <div class="clearfix">
-            <p>Light, inicialmente motivado por um desejo de justiça, gradualmente se corrompe pelo poder do Death Note, tornando-se Kira, um assassino em série tão perigoso quanto os criminosos que persegue.</p>
-            
-            <img src="https://i.imgur.com/t4zCwW4.png" alt="Ryuk" class="right-img">
-        </div>
-        
-        <div class="clearfix">
-            <p>Ryuk, o shinigami (deus da morte) que deixa o Death Note cair no mundo humano, adiciona um elemento de humor à história. Ele observa os eventos como um espectador desinteressado, destacando a natureza destrutiva da ambição humana. A relação entre Ryuk e Light é marcada por uma dinâmica peculiar, onde o shinigami não é um aliado nem um inimigo, mas simplesmente um observador curioso.</p>
-            
-            <img src="https://i.imgur.com/IwtuiNJ.png" alt="Misa Amane" class="right-img">
-        </div>
-        
-        <div class="clearfix">
-            <p>Misa Amane, outra usuária do Death Note, introduz um elemento de caos e obsessão na narrativa. Sua devoção cega a Light e sua natureza impulsiva contrastam com a calculista personalidade do protagonista, criando tensões adicionais. A presença de Misa também explora temas como manipulação e dependência emocional, enriquecendo a trama.</p>
-            
-            <img src="https://i.imgur.com/rf7xO45.png" alt="L" class="right-img">
-        </div>
-        
-        <p>L, o misterioso melhor detetive do mundo, é capaz de rapidamente demonstrar as capacidades e limitações de Kira ao público, prometendo capturá-lo e sentenciá-lo.</p>
-        
-        <p>O legado de Death Note permanece forte anos após seu lançamento, inspirando adaptações em live-action, séries e até debates filosóficos. A série desafia os espectadores a refletirem sobre justiça, poder e ética, tornando-se muito mais do que um simples anime.</p>
-    
-        <div class="last-img-container">
-            <img src="https://i.imgur.com/zqVvOwe.png" alt="Confronto Final">
-        </div>
-    </main>
+  <div class="container">
+    <h1>Importância da Qualidade de Vida</h1>
+
+    <!-- Primeira seção com imagem à esquerda -->
+    <div class="bloco-esquerda">
+      <div class="texto">
+        <p>Qualidade de vida é um conceito amplo que envolve bem-estar físico, mental e social. Ter uma alimentação balanceada, praticar exercícios físicos regularmente e dormir bem são aspectos fundamentais para manter o equilíbrio da saúde. Além disso, ter relações interpessoais saudáveis e tempo para lazer também são componentes essenciais. Quando esses fatores estão alinhados, as pessoas tendem a ter maior produtividade e satisfação com a vida.</p>
+      </div>
+      <img src="imagem1.jpg" alt="Pessoa praticando atividades físicas" class="imagem">
+    </div>
+
+    <!-- Segunda seção com imagem à direita -->
+    <div class="bloco-direita">
+      <div class="texto">
+        <p>Outro fator importante para a qualidade de vida é o ambiente em que vivemos e trabalhamos. Um local limpo, seguro e com acesso a serviços básicos melhora significativamente o bem-estar. Além disso, equilíbrio entre vida pessoal e profissional é fundamental para evitar o estresse crônico. Investir em saúde mental, como praticar meditação ou buscar apoio psicológico, também contribui muito. Com pequenas mudanças diárias, é possível alcançar uma vida mais saudável e equilibrada.</p>
+      </div>
+      <img src="imagem2.jpg" alt="Ambiente tranquilo com natureza" class="imagem">
+    </div>
+
+    <div class="versao">
+      Versão: 1/4/2023
+    </div>
+  </div>
+
 </body>
 </html>
